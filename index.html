@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dental Clinic — Landing</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="contact">
+        <span class="phone">📞 +91 98765 43210</span>
+        <span class="separator">|</span>
+        <span class="time">Mon-Sat: 9am-6pm</span>
+      </div>
+      <div class="cta-small">
+        <a href="#get-appointment" class="btn-ghost">Book Appointment</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero">Clove Dental</a>
+
+      <nav class="nav" id="navMenu" aria-label="Main Navigation">
+        <a href="#hero">Home</a>
+        <a href="#treatments">Treatments</a>
+        <a href="#transformations">Transformations</a>
+        <a href="#why">Why Us</a>
+        <a href="#get-appointment" class="btn-primary">Book</a>
+      </nav>
+
+      <button id="menuBtn" class="menu-btn" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="kicker">Trusted Dental Care</p>
+          <h1>Expert Dental Care — Healthy Smiles, Happier You</h1>
+          <p class="lead">Comprehensive dental treatments by experienced doctors. Book an appointment or walk in today.</p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="#get-appointment">Book Appointment</a>
+            <a class="btn-ghost" href="#treatments">Our Treatments</a>
+          </div>
+          <div class="hero-meta">
+            <div class="meta-item">
+              <strong>4.8</strong>
+              <span>Rating</span>
+            </div>
+            <div class="meta-item">
+              <strong>500+</strong>
+              <span>Happy patients</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <img src="/images/doctorroom.jpg" alt="Doctor and patient" class="hero-img" >
+        </div>
+      </div>
+    </section>
+
+    <section id="treatments" class="section">
+      <div class="container">
+        <h2>Types of Dental Treatments</h2>
+        <p class="muted">We offer a wide range of services — here are a few common treatments.</p>
+
+        <div class="cards-grid">
+          <article class="card">
+            <img src="/images/rootcanal.png" alt="Root canal treatment">
+            <h3>Root Canal Treatment</h3>
+            <p>Safe and effective root canal procedures to relieve pain and restore teeth.</p>
+            <a class="link" href="#get-appointment">Book now</a>
+          </article>
+
+          <article class="card">
+            <img src="/images/dentalimplant.jpeg" alt="Dental implants">
+            <h3>Dental Implants</h3>
+            <p>Permanent tooth replacements that look and feel natural.</p>
+            <a class="link" href="#get-appointment">Learn more</a>
+          </article>
+
+          <article class="card">
+            <img src="/images/toothwhiting.jpeg" alt="Teeth whitening">
+            <h3>Teeth Whitening</h3>
+            <p>Professional whitening treatments for a brighter smile.</p>
+            <a class="link" href="#get-appointment">Get started</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="transformations" class="section section-alt">
+      <div class="container">
+        <h2>Real Smiles — Real Transformations</h2>
+        <p class="muted">Before and after photos from our patients.</p>
+
+        <div class="carousel" id="transformCarousel" aria-roledescription="carousel">
+          <button class="carousel-btn prev" aria-label="Previous"><</button>
+          <div class="carousel-track">
+            <img src="/images/tranform1.png" alt="image1" />
+            <img src="/images/tranform2.png" alt="image2" />
+            <img src="/images/transform3.png" alt="image3" />
+          </div>
+          <button class="carousel-btn next" aria-label="Next">></button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="why" class="section">
+      <div class="container why-grid">
+        <div class="why-media">
+          <img src="/images/staff.png" alt="Clinic technology and staff">
+        </div>
+        <div class="why-content">
+          <h2>Why Choose Clove Dental?</h2>
+          <ul class="checklist">
+            <li>Experienced and certified practitioners</li>
+            <li>Advanced, safe dental technology</li>
+            <li>Patient-first approach and aftercare</li>
+            <li>Transparent pricing and friendly staff</li>
+          </ul>
+          <a class="btn-primary" href="#get-appointment">Book Consultation</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="get-appointment" class="section cta-section">
+      <div class="container cta-grid">
+        <div>
+          <h2>Book an Appointment</h2>
+          <p class="muted">Quick online booking — we’ll call to confirm the schedule.</p>
+        </div>
+        <form class="appointment-form" action="#" onsubmit="return false;">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="tel" name="phone" placeholder="Phone number" required>
+          </div>
+          <div class="form-row">
+            <input type="date" name="date" required>
+            <select name="service">
+              <option value="select">Choose service</option>
+              <option>Root Canal</option>
+              <option>Implant</option>
+              <option>Whitening</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <button class="btn-primary" type="submit">Request Appointment</button>
+            <button class="btn-ghost" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand-col">
+        <a class="brand" href="#hero">Clove Dental</a>
+        <p class="muted">© <span id="year"></span> Clove Dental. All rights reserved.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#treatments">Treatments</a>
+        <a href="#transformations">Transformations</a>
+        <a href="#why">Why us</a>
+      </nav>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
